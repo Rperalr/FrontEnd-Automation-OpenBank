@@ -36,10 +36,10 @@ Arquitectura Java WebUI - Selenium Web Driver With Junit -
 - Screenshot
   
 ##  Ejemplo de Test Java POO (Selenium WebUI - Methods)
-
-    public HomePageCss Method_Css() {
+public HomePageCss Method_Css() {
     HomePageCss homePageCss = new HomePageCss(driver);
         actions.maximize(driver);
+        
         actions.sleep();
         actions.click(homePageCss.getBtnModulos_MENU_PRODUCTOS());
         waits.timeOutImplicitWaitHorTwo(driver);
@@ -55,18 +55,18 @@ Arquitectura Java WebUI - Selenium Web Driver With Junit -
     }
 
 ##  Ejemplo de Test Java POO (Selenium WebUI - Locators)
-    //Localizadores de los Elementos Web del Modelo de Pagina
-        @FindBy(how = How.CSS , css = "#navbar-wrapper > div.ok-topbar > div.ok-middle-topbar > div.ok-middle-topbar__block > div.products-area > ul > li:nth-child(1) > span")
+  @FindBy(how = How.CSS , css = "#navbar-wrapper > div.ok-topbar > div.ok-middle-topbar > div.ok-middle-topbar__block > div.products-area > ul > li:nth-child(1) > span")
         private WebElement btnModulos_MENU_PRODUCTOS;
-        @FindBy(how = How.CSS , css = "#navbar-wrapper > div.ok-topbar > div.ok-middle-topbar > div.ok-middle-topbar__block > div.products-area > ul > li:nth-child(1) > div > div > div > div.products-selector__items > ul > li.products-selector__list__item.products-selector__list__item--active > div > span.products-selector__list__item__text")
-        private WebElement btnMenuPrincipal_CUENTAS;
-            //getters
-            public WebElement getBtnModulos_MENU_PRODUCTOS() {
-            return btnModulos_MENU_PRODUCTOS;
-            }
-            public WebElement getBtnMenuPrincipal_CUENTAS() {
-            return btnMenuPrincipal_CUENTAS;
-            }
+        
+            @FindBy(how = How.CSS , css = "#navbar-wrapper > div.ok-topbar > div.ok-middle-topbar > div.ok-middle-topbar__block > div.products-area > ul > li:nth-child(1) > div > div > div > div.products-selector__items > ul > li.products-selector__list__item.products-    selector__list__item--active > div > span.products-selector__list__item__text")
+            private WebElement btnMenuPrincipal_CUENTAS;
+                //getters
+                public WebElement getBtnModulos_MENU_PRODUCTOS() {
+                return btnModulos_MENU_PRODUCTOS;
+                }
+                public WebElement getBtnMenuPrincipal_CUENTAS() {
+                return btnMenuPrincipal_CUENTAS;
+                }
 
 
 ##  Ejemplo de Test Java POO (Selenium WebUI - Test - Junit)
