@@ -36,23 +36,23 @@ Arquitectura Java WebUI - Selenium Web Driver With Junit -
 - Screenshot
   
 ##  Ejemplo de Test Java POO (Selenium WebUI - Methods)
-public HomePageCss Method_Css() {
-    HomePageCss homePageCss = new HomePageCss(driver);
-        actions.maximize(driver);
+ public HomePageCss Method_Css() {
+        HomePageCss homePageCss = new HomePageCss(driver);
         
-        actions.sleep();
-        actions.click(homePageCss.getBtnModulos_MENU_PRODUCTOS());
-        waits.timeOutImplicitWaitHorTwo(driver);
-        actions.click(homePageCss.getBtnMenuPrincipal_CUENTAS());
-        waits.timeOutImplicitWaitHorTwo(driver);
-        actions.click(homePageCss.getBtnSubMenu_PROMOCIONES());
-        actions.scrollDown(driver);
-            assertEquals("https://www.openbank.es/",driver.
-            getCurrentUrl(),"La url es correcta " + driver.getCurrentUrl());
+            actions.moveTo(homePageCss.getBtnModulos_MENU_PRODUCTOS(),driver);
+            waits.timeOutImplicitWaitHorTwo(driver);
+                    actions.moveTo(homePageCss.getBtnSubMenu_PROMOCIONES(),driver);
+                    actions.moveTo(homePageCss.getBtnSubMenu_CONOCE_OPENBANK(),driver);
+                    actions.click(homePageCss.getBtnSubMenu_BLOG());
+
+            assertEquals("https://www.openbank.es/open-to-learn",driver.
+                     getCurrentUrl(),"La url es correcta " + driver.getCurrentUrl());
             assertEquals("España - ES",homePageCss
-            .getBtn_PAIS_ORIGEN_LANDING().getText(),"Si se encuentra visible el Boton de pais origen en la Landind OpenBank");
-    return homePageCss;
+                     .getBtn_PAIS_ORIGEN_LANDING().getText(),"Si se encuentra visible el Boton de pais origen en la Landind OpenBank");
+
+        return homePageCss;
     }
+}
 
 ##  Ejemplo de Test Java POO (Selenium WebUI - Locators)
   @FindBy(how = How.CSS , css = "#navbar-wrapper > div.ok-topbar > div.ok-middle-topbar > div.ok-middle-topbar__block > div.products-area > ul > li:nth-child(1) > span")
