@@ -67,3 +67,28 @@ Arquitectura Java WebUI - Selenium Web Driver With Junit -
             public WebElement getBtnMenuPrincipal_CUENTAS() {
             return btnMenuPrincipal_CUENTAS;
             }
+
+
+##  Ejemplo de Test Java POO (Selenium WebUI - Test - Junit)
+@Test
+    public void TestXpath() throws Exception {
+       this.createFireFox();
+          this.getUrl(OPENBANK_URL_WEBUI);
+                 HomePageXPath page = new HomePageXPath(driver);
+                 Methods methods = new Methods(driver);
+                 ScreenshotElementUtil screenshotElementUtil = new ScreenshotElementUtil();
+
+          this.createReportHtml("Test Solicitud Cliente Nuevo  ");
+            try {
+                    page.aceptarCookies();
+                    methods.Method_Xpath();
+
+           this.test.log(Status.PASS, "Test fue exitoso");
+       } catch (Exception e) {
+            this.test.log(Status.FAIL, "Test falló: " + e.getMessage());
+      }
+       screenshotElementUtil.captureElementScreenshot(driver, page.getLbl_COMPLETAR_DATOS_PERSONALES(), ALLPATH_ASHOT_ELEMENT_WEB);
+       ScreenshotUtils.takeScreenshot(driver, PATH_ASHOT + NAME_ASHOOT + TIME_STAMP + ".jpg");
+
+    }
+
