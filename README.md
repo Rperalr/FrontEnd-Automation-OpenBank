@@ -11,7 +11,7 @@ Este proyecto nos sirve para una regresión de una nueva solicitud de nuevo clie
 1. Clone the repository:
 
 bash
-(https://github.com/Rperalr/FrontEnd-Automation-OpenBank.git)
+(https://github.com/Rperalr/FrontEnd-Automation-OpenBank/tree/QA_DEV)
 cd Proyecto_OB
 
 2. Run tests with Maven:
