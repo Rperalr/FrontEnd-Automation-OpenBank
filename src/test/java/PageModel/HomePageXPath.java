@@ -21,7 +21,6 @@ public class HomePageXPath extends BasePage {
     private WebElement txbx_SELECIONAR_PAIS;
 
     //Assert Labels
- //Localizadores de los Elementos Web del Modelo de Pagina
     @FindBy(how = How.XPATH , xpath = "//div[@class='title-box__subtitle--register']")
     private WebElement lbl_CUENTA_CORRIENTE;
     @FindBy(how = How.XPATH , xpath = "(//h4[normalize-space()='Completa tus datos personales.'])[1]")
