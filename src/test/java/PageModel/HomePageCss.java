@@ -12,23 +12,18 @@ public class HomePageCss extends BasePage {
     private WebElement btn_COOKIES;
 
     //Localizadores de los Elementos Web del Modelo de Pagina
-    @FindBy(how = How.CSS , css = "#navbar-wrapper > div.ok-topbar > div.ok-middle-topbar > div.ok-middle-topbar__block > div.products-area > ul > li:nth-child(1) > span")
-    private WebElement btnModulos_MENU_PRODUCTOS;
-    @FindBy(how = How.CSS , css = "#navbar-wrapper > div.ok-topbar > div.ok-middle-topbar > div.ok-middle-topbar__block > div.products-area > ul > li:nth-child(1) > div > div > div > div.products-selector__items > ul > li.products-selector__list__item.products-selector__list__item--active > div > span.products-selector__list__item__text")
-    private WebElement btnMenuPrincipal_CUENTAS;
-    //Localizadores de los Elementos Web del Modelo de Pagina
-    @FindBy(how = How.CSS , css = "#navbar-wrapper > div.ok-topbar > div.ok-middle-topbar > div.ok-middle-topbar__block > div.products-area > ul > li:nth-child(2) > span")
-    private WebElement btnSubMenu_PROMOCIONES;
-    //Localizadores de los Elementos Web del Modelo de Pagina
-    @FindBy(how = How.CSS , css = "#navbar-wrapper > div.ok-topbar > div.ok-middle-topbar > div.ok-middle-topbar__block > div.products-area > ul > li:nth-child(3) > span")
-    private WebElement btnSubMenu_CONOCE_OPENBANK;
-    //Localizadores de los Elementos Web del Modelo de Pagina
-    @FindBy(how = How.CSS , css = "#navbar-wrapper > div.ok-topbar > div.ok-middle-topbar > div.ok-middle-topbar__block > div.products-area > ul > li:nth-child(4) > a")
+    @FindBy(how = How.CSS , css = "div[class='ok-middle-topbar'] li:nth-child(1) span:nth-child(1)")
+    private WebElement btnModulos_MENU_CUENTAS;
+    @FindBy(how = How.CSS , css = "div[class='ok-middle-topbar'] li:nth-child(2) span:nth-child(1)")
+    private WebElement btnSubMenu_TARJETAS;
+    @FindBy(how = How.CSS , css = "div[class='ok-middle-topbar'] li:nth-child(3) span:nth-child(1)")
+    private WebElement btnSubMenu_FINANCIACION;
+    @FindBy(how = How.CSS , css = "a[class='products-area__item__link']")
     private WebElement btnSubMenu_BLOG;
 
 
     //Assert Labels
-    @FindBy(how = How.CSS , css = "#navbar-wrapper > div.ok-topbar > div.ok-public-topbar > ul > li:nth-child(4) > div > span > span")
+    @FindBy(how = How.CSS , css = "span[role='button'] span")
     private WebElement btn_PAIS_ORIGEN_LANDING; //Localizadores de los Elementos Web del Modelo de Pagina
 
     //constructror clase
@@ -37,36 +32,13 @@ public class HomePageCss extends BasePage {
     }
 
     //getters
-    public WebElement getBtnModulos_MENU_PRODUCTOS() {
-        return btnModulos_MENU_PRODUCTOS;
-    }
-    public WebElement getBtnMenuPrincipal_CUENTAS() {
-        return btnMenuPrincipal_CUENTAS;
-    }
-    public WebElement getBtnSubMenu_PROMOCIONES() {
-        return btnSubMenu_PROMOCIONES;
-    }
-
-    public WebElement getBtnSubMenu_CONOCE_OPENBANK() {
-        return btnSubMenu_CONOCE_OPENBANK;
-    }
+    public WebElement getBtnModulos_MENU_CUENTAS() {return btnModulos_MENU_CUENTAS;}
+    public WebElement getBtnSubMenu_TARJETAS() {return btnSubMenu_TARJETAS;}
+    public WebElement getBtnSubMenu_FINANCIACION() {return btnSubMenu_FINANCIACION;}
     public WebElement getBtnSubMenu_BLOG() {
         return btnSubMenu_BLOG;
     }
-    public WebElement getBtn_PAIS_ORIGEN_LANDING() {
-        return btn_PAIS_ORIGEN_LANDING;
-    }
+    public WebElement getBtn_PAIS_ORIGEN_LANDING() {return btn_PAIS_ORIGEN_LANDING;}
 
-    //Aceptar y Cerrar Ventana Cookies
-    public void aceptarCookies() {
-        try {
-            if (btn_COOKIES.isEnabled()) {
-                btn_COOKIES.click();
-                System.out.println("✅ Cookie banner cerrado.");
-            }
-        } catch (Exception e) {
-            System.out.println("⚠️ No se encontró el banner de cookies o ya estaba cerrado.");
-        }
-    }
 }
 

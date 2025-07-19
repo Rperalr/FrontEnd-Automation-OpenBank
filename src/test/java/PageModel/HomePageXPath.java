@@ -12,20 +12,19 @@ public class HomePageXPath extends BasePage {
     public WebElement btn_COOKIES;
 
     //Localizadores de los Elementos Web del Modelo de Pagina
-    @FindBy(how = How.XPATH , xpath = "//*[@id=\"navbar-wrapper\"]/div[3]/div[2]/div[2]/div[2]/div/a")
+    @FindBy(how = How.XPATH , xpath = "(//a[@title='Hazte Cliente'][normalize-space()='Hazte Cliente'])[1]")
     private WebElement btn_HASTE_CLIENTE;
     //Localizadores de los Elementos Web del Modelo de Pagina
     @FindBy(how = How.XPATH , xpath = "//button[normalize-space()='¡Quiero hacerme cliente!']")
     private WebElement btn_QUIERO_HACERME_CLIENTE;
-    @FindBy(how = How.XPATH , xpath = "/html/body/div[1]/div/div[1]/div/div[2]/div[1]/div[2]/div[1]/div/div/div/div/div/div[1]")
+    @FindBy(how = How.XPATH , xpath = "(//div[@class='Select-placeholder'])[1]")
     private WebElement txbx_SELECIONAR_PAIS;
 
     //Assert Labels
-    @FindBy(how = How.XPATH , xpath = "/html/body/div[1]/div/div[1]/header/div[1]/div[1]/a")
-    private WebElement lbl_AREA_CLIENTES; //Localizadores de los Elementos Web del Modelo de Pagina
-    @FindBy(how = How.XPATH , xpath = "//*[@id=\"content\"]/div[1]/div/div[1]/div/div[1]/div/div/div/div/div/div[2]")
+ //Localizadores de los Elementos Web del Modelo de Pagina
+    @FindBy(how = How.XPATH , xpath = "(//div[@class='title-box__subtitle--register'])[1]")
     private WebElement lbl_CUENTA_CORRIENTE;
-    @FindBy(how = How.XPATH , xpath = "//*[@id=\"content\"]/div[1]/div/div[2]/div[1]/div[1]/div/div/h4")
+    @FindBy(how = How.XPATH , xpath = "(//h4[normalize-space()='Completa tus datos personales.'])[1]")
     private WebElement lbl_COMPLETAR_DATOS_PERSONALES;
 
     //constructror clase
@@ -37,12 +36,7 @@ public class HomePageXPath extends BasePage {
     public WebElement getBtn_HASTE_CLIENTE() {
         return btn_HASTE_CLIENTE;
     }
-    public WebElement getBtn_QUIERO_HACERME_CLIENTE() {
-        return btn_QUIERO_HACERME_CLIENTE;
-    }
-    public WebElement getLbl_AREA_CLIENTES() {
-        return lbl_AREA_CLIENTES;
-    }
+    public WebElement getBtn_QUIERO_HACERME_CLIENTE() {return btn_QUIERO_HACERME_CLIENTE;}
     public WebElement getLbl_CUENTA_CORRIENTE() {
         return lbl_CUENTA_CORRIENTE;
     }

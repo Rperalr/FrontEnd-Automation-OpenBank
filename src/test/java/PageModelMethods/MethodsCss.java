@@ -23,10 +23,10 @@ public class MethodsCss extends BasePage {
 
     public HomePageCss Method_Css() {
         HomePageCss homePageCss = new HomePageCss(driver);
-            actions.moveTo(homePageCss.getBtnModulos_MENU_PRODUCTOS(),driver);
+            actions.moveTo(homePageCss.getBtnModulos_MENU_CUENTAS(),driver);
             waits.timeOutImplicitWaitHorTwo(driver);
-                    actions.moveTo(homePageCss.getBtnSubMenu_PROMOCIONES(),driver);
-                    actions.moveTo(homePageCss.getBtnSubMenu_CONOCE_OPENBANK(),driver);
+                    actions.moveTo(homePageCss.getBtnSubMenu_TARJETAS(),driver);
+                    actions.moveTo(homePageCss.getBtnSubMenu_FINANCIACION(),driver);
                     actions.click(homePageCss.getBtnSubMenu_BLOG());
             assertEquals("https://www.openbank.es/open-to-learn",driver.
                      getCurrentUrl(),"La url es correcta " + driver.getCurrentUrl());

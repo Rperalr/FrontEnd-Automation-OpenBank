@@ -35,7 +35,7 @@ public class HomePageCssLlenarForm extends BasePage {
     @FindBy(how = How.ID , id = "resident_0")
     public WebElement chkbx_PERDSONA_FISICA;
     //Localizadores de los Elementos Web del Modelo de Pagina
-    @FindBy(how = How.CSS , css = "div.intial-section:nth-child(1) > div:nth-child(3) > button:nth-child(1)")
+    @FindBy(how = How.CSS , css = "button[aria-disabled='true']")
     public WebElement btn_ENTENDIDO;
     @FindBy(how = How.XPATH , xpath = "/html/body/div[1]/div/div[1]/div/div[2]/div[1]/div[2]/div[1]/div/div/div/div/div/div[1]")
     public WebElement txbx_SELECIONAR_PAIS;
@@ -43,7 +43,7 @@ public class HomePageCssLlenarForm extends BasePage {
     public WebElement txbx_SELECIONAR_PAIS_ESPAÑA;
 
     //Assert Labels
-    @FindBy(how = How.CSS , css = "#navbar-wrapper > div.ok-topbar > div.ok-public-topbar > ul > li:nth-child(4) > div > span > span")
+    @FindBy(how = How.CSS , css = "span[role='button'] span")
     public WebElement btn_PAIS_ORIGEN_LANDING; //Localizadores de los Elementos Web del Modelo de Pagina
 
     //constructror clase
