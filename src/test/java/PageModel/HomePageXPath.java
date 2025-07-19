@@ -8,7 +8,7 @@ import base.utilsBase.BasePage;
 
 public class HomePageXPath extends BasePage {
     //Cookies
-    @FindBy(how = How.XPATH , xpath = "/html/body/div[2]/div/div/div/div[3]/div/div[3]/button")
+    @FindBy(how = How.XPATH , xpath = "//button[contains(text(),'Aceptar y navegar')]")
     public WebElement btn_COOKIES;
 
     //Localizadores de los Elementos Web del Modelo de Pagina
@@ -22,7 +22,7 @@ public class HomePageXPath extends BasePage {
 
     //Assert Labels
  //Localizadores de los Elementos Web del Modelo de Pagina
-    @FindBy(how = How.XPATH , xpath = "(//div[@class='title-box__subtitle--register'])[1]")
+    @FindBy(how = How.XPATH , xpath = "//div[@class='title-box__subtitle--register']")
     private WebElement lbl_CUENTA_CORRIENTE;
     @FindBy(how = How.XPATH , xpath = "(//h4[normalize-space()='Completa tus datos personales.'])[1]")
     private WebElement lbl_COMPLETAR_DATOS_PERSONALES;
