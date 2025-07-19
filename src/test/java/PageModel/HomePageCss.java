@@ -7,9 +7,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 public class HomePageCss extends BasePage {
-    //CookieS
-    @FindBy(how = How.XPATH , xpath = "/html/body/div[2]/div/div/div/div[3]/div/div[3]/button")
-    private WebElement btn_COOKIES;
 
     //Localizadores de los Elementos Web del Modelo de Pagina
     @FindBy(how = How.CSS , css = "div[class='ok-middle-topbar'] li:nth-child(1) span:nth-child(1)")
