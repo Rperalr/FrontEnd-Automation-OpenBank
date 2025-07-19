@@ -18,7 +18,7 @@ public class BaseTest extends BaseTestInstance {
      * @throws Exception if an error occurs during the setup process.
      */
     @Before
-    public void setUpDriver() throws Exception {
+    public void setUp() throws Exception {
             this.extentManager();
 
     }
@@ -30,7 +30,7 @@ public class BaseTest extends BaseTestInstance {
      * @throws Exception if an error occurs during the flushing or closing of the report.
      */
     @After
-    public void closeExtent() throws Exception {
+    public void setDown() throws Exception {
             this.extenFlush();
                      this.close();
         //System.out.println("No existe reporte Web");
@@ -147,7 +147,7 @@ public class BaseTest extends BaseTestInstance {
             extent.flush();
         return;
     }
-    public void createReportHtml(String nameReport) throws Exception {
+    public void createReportHtmlTest(String nameReport) throws Exception {
         test = extent.createTest(nameReport);//
     }
     /**
