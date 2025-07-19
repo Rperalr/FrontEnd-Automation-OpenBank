@@ -32,15 +32,12 @@ public class HomePageCssLlenarForm extends BasePage {
     @FindBy(how = How.CSS , css = "#birthYear")
     public WebElement txtbx_AAAA;
     //Localizadores de los Elementos Web del Modelo de Pagina
-    @FindBy(how = How.ID , id = "resident_0")
+    @FindBy(how = How.CSS , css = "label[for='resident_0']")
     public WebElement chkbx_PERDSONA_FISICA;
     //Localizadores de los Elementos Web del Modelo de Pagina
     @FindBy(how = How.CSS , css = "button[aria-disabled='true']")
     public WebElement btn_ENTENDIDO;
-    @FindBy(how = How.XPATH , xpath = "/html/body/div[1]/div/div[1]/div/div[2]/div[1]/div[2]/div[1]/div/div/div/div/div/div[1]")
-    public WebElement txbx_SELECIONAR_PAIS;
-    @FindBy(how = How.XPATH , xpath = "/html/body/div[1]/div/div[1]/div/div[2]/div/div[2]/div[1]/div/div/div/div/div/div[1]/span")
-    public WebElement txbx_SELECIONAR_PAIS_ESPAÑA;
+
 
     //Assert Labels
     @FindBy(how = How.CSS , css = "span[role='button'] span")
