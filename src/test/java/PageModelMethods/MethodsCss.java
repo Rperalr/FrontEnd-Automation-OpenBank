@@ -23,6 +23,7 @@ public class MethodsCss extends BasePage {
 
     public HomePageCss Method_Css() {
         HomePageCss homePageCss = new HomePageCss(driver);
+            actions.click(homePageCss.getBtnHome_SABER_MAS());
             actions.moveTo(homePageCss.getBtnModulos_MENU_CUENTAS(),driver);
             waits.timeOutImplicitWaitHorTwo(driver);
                     actions.moveTo(homePageCss.getBtnSubMenu_TARJETAS(),driver);

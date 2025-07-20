@@ -9,7 +9,7 @@ import base.utilsBase.BasePage;
 public class HomePageXPath extends BasePage {
     //Cookies
     @FindBy(how = How.XPATH , xpath = "//button[contains(text(),'Aceptar y navegar')]")
-    public WebElement btn_COOKIES;
+    private WebElement btn_COOKIES;
 
     //Localizadores de los Elementos Web del Modelo de Pagina
     @FindBy(how = How.XPATH , xpath = "(//a[@title='Hazte Cliente'][normalize-space()='Hazte Cliente'])[1]")

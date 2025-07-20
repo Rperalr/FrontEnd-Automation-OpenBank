@@ -17,7 +17,8 @@ public class HomePageCss extends BasePage {
     private WebElement btnSubMenu_FINANCIACION;
     @FindBy(how = How.CSS , css = "a[class='products-area__item__link']")
     private WebElement btnSubMenu_BLOG;
-
+    @FindBy(how = How.XPATH , xpath = "//*[@data-testid = 'gatsbyLink']")
+    private WebElement btnHome_SABER_MAS;
 
     //Assert Labels
     @FindBy(how = How.CSS , css = "span[role='button'] span")
@@ -37,5 +38,8 @@ public class HomePageCss extends BasePage {
     }
     public WebElement getBtn_PAIS_ORIGEN_LANDING() {return btn_PAIS_ORIGEN_LANDING;}
 
+    public WebElement getBtnHome_SABER_MAS() {
+        return btnHome_SABER_MAS;
+    }
 }
 

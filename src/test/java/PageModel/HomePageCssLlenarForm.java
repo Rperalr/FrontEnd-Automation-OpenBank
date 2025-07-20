@@ -9,18 +9,18 @@ import org.openqa.selenium.support.How;
 public class HomePageCssLlenarForm extends BasePage {
 
     //Localizadores de los Elementos Web del Modelo de Pagina
-    @FindBy(how = How.CSS , css = "#promocode")
+    @FindBy(how = How.XPATH, xpath = "//input[@id='promocode']")
     public WebElement txtbx_CODIGOP_PROMOCIONAL;
-    @FindBy(how = How.CSS , css = "#docNumber")
+    @FindBy(how = How.XPATH, xpath = "//input[@id='docNumber']")
     public WebElement txtbx_NUMERO_DOCUMENTO;
     //Localizadores de los Elementos Web del Modelo de Pagina
-    @FindBy(how = How.CSS , css = "#name")
+    @FindBy(how = How.XPATH,xpath = "//input[@id='name']")
     public WebElement txtbx_NOMBRE;
     //Localizadores de los Elementos Web del Modelo de Pagina
-    @FindBy(how = How.CSS , css = "#lastName")
+    @FindBy(how = How.XPATH,xpath = "//input[@id='lastName']")
     public WebElement txtbx_1ER_APELLIDO;
     //Localizadores de los Elementos Web del Modelo de Pagina
-    @FindBy(how = How.CSS , css = "#secondLastName")
+    @FindBy(how = How.XPATH,xpath = "//input[@id='secondLastName']")
     public WebElement txtbx_2DO_APELLIDO;
     //Localizadores de los Elementos Web del Modelo de Pagina
     @FindBy(how = How.CSS , css = "#birthDay")
