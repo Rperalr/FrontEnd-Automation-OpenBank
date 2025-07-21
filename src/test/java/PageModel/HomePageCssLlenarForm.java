@@ -33,7 +33,7 @@ public class HomePageCssLlenarForm extends BasePage {
     public WebElement txtbx_AAAA;
     //Localizadores de los Elementos Web del Modelo de Pagina
     @FindBy(how = How.CSS , css = "label[for='resident_0']")
-    public WebElement chkbx_PERDSONA_FISICA;
+    public WebElement radBtn_PERDSONA_FISICA;
     //Localizadores de los Elementos Web del Modelo de Pagina
     @FindBy(how = How.CSS , css = "button[aria-disabled='true']")
     public WebElement btn_ENTENDIDO;
@@ -49,8 +49,8 @@ public class HomePageCssLlenarForm extends BasePage {
     }
     public void aceptarPersonaFisica() {
         try {
-            if (chkbx_PERDSONA_FISICA.isSelected()) {
-                chkbx_PERDSONA_FISICA.click();
+            if (radBtn_PERDSONA_FISICA.isSelected()) {
+                radBtn_PERDSONA_FISICA.click();
                 System.out.println("✅ Cookie banner cerrado.");
             }
         } catch (Exception e) {

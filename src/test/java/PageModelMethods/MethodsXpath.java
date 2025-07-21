@@ -21,7 +21,7 @@ public class MethodsXpath extends BasePage {
         super(driver);
     }
 
-    public HomePageXPath Method_Xpath_Hazte_Cliente() {
+    public HomePageXPath Method_Hazte_Cliente() {
             HomePageXPath homePageXPath = new HomePageXPath(driver);
                     actions.click(homePageXPath.getBtn_HASTE_CLIENTE());
                     waits.timeOutImplicitWaitHorTwo(driver);
