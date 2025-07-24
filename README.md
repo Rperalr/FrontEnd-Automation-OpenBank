@@ -36,30 +36,30 @@ Arquitectura Java WebUI - Selenium Web Driver With Junit -
 - Screenshot
   
                 WebUI-OpenBank/
-          ├── logs/
-          ├── src/
-          │   └── main/
-          │       └── java/
-          │           ├── ExtentRepor/
-          │           ├── implements/
-          │           ├── interfaces/
-          │           ├── uitlsFunctions/
-          │           └── Base/
-          │               ├── Instances/
-          │               └── UitlsBase/
-          ├── Test/
-          │   ├── Ashot/
-          │   ├── ExtentRepor/
-          │   └── Java/
-          │       ├── PageModel/
-          │       ├── PageModelMethods/
-          │       └── Test/
-          ├── resources/
-          │   ├── .XML/
-          │   ├── .pom/
-          │   ├── .log4j/
-          │   ├── .readme/
-          │   └── .gitignore/
+                        ├── logs/
+                        ├── src/
+                        │   └── main/
+                        │       └── java/
+                        │           ├── ExtentRepor/
+                        │           ├── implements/
+                        │           ├── interfaces/
+                        │           ├── uitlsFunctions/
+                        │           └── Base/
+                        │               ├── Instances/
+                        │               └── UitlsBase/
+                        ├── Test/
+                        │   ├── Ashot/
+                        │   ├── ExtentRepor/
+                        │   └── Java/
+                        │       ├── PageModel/
+                        │       ├── PageModelMethods/
+                        │       └── Test/
+                        ├── resources/
+                        │   ├── .XML/
+                        │   ├── .pom/
+                        │   ├── .log4j/
+                        │   ├── .readme/
+                        │   └── .gitignore/
   
 ##  Ejemplo de Test Java POO (Selenium WebUI - Methods)
  public HomePageCss Method_Css() {
