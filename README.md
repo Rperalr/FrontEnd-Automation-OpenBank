@@ -12,7 +12,7 @@ Este proyecto nos sirve para una regresión de una nueva solicitud de nuevo clie
 
 bash
 (https://github.com/Rperalr/FrontEnd-Automation-OpenBank/tree/QA_DEV)
-cd Proyecto_OB
+cd FrontEnd-Automation-OpenBank
 
 2. Run tests with Maven:
 
