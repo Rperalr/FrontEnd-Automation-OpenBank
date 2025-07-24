@@ -40,4 +40,5 @@ public class TestXpathOpenBank extends BaseTest {
        ScreenshotUtils.takeScreenshot(driver, PATH_ASHOT + NAME_ASHOOT + TIME_STAMP + ".jpg");
 
     }
+
 }

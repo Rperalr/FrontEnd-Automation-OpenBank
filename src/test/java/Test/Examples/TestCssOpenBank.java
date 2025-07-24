@@ -27,7 +27,7 @@ public class TestCssOpenBank extends BaseTest {
 
         this.createReportHtmlTest("Test Smoke - Landing Page OpenBank");
             try {
-                    page.aceptarCookies();
+                    page.MethodaceptarCookies();
                     methods.Method_Css();
 
             this.test.log(Status.PASS, "Test fue exitoso");
