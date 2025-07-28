@@ -28,7 +28,7 @@ public class TestXpathOpenBank extends BaseTest {
 
           this.createReportHtmlTest("Test - Solicitud - Hazte Cliente");
             try {
-                    page.MethodaceptarCookies();
+                    page.Method_AceptarCookies();
                     methods.Method_Hazte_Cliente();
                     methods.Method_Llenado_Formulario_Hazte_Cliente();
 

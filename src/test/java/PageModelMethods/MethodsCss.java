@@ -21,7 +21,7 @@ public class MethodsCss extends BasePage {
         super(driver);
     }
 
-    public HomePageCss Method_Css() {
+    public HomePageCss Method_TestSmoke() {
             HomePageCss homePageCss = new HomePageCss(driver);
                 actions.click(homePageCss.getBtnHome_SABER_MAS());
                 actions.moveTo(homePageCss.getBtnModulos_MENU_CUENTAS(),driver);

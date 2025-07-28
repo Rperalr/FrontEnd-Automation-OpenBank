@@ -47,7 +47,7 @@ public class HomePageXPath extends BasePage {
         return radBtn_SELECIONAR_PAIS;
     }
 
-    public void MethodaceptarCookies() {
+    public void Method_AceptarCookies() {
         try {
             if (btn_COOKIES.isEnabled()) {
                 btn_COOKIES.click();
