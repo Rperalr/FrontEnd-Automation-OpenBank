@@ -46,7 +46,8 @@ public class MethodsXpath extends BasePage {
                 getLbl_CUENTA_CORRIENTE().getText(),"Si se encuentra visible la etiqueta correcta");
         assertEquals("Completa tus datos personales.",homePageXPath.
                 getLbl_COMPLETAR_DATOS_PERSONALES().getText(),"Si se encuentra visible la etiqueta de datos personales");
-        return homePageCssLlenarForm;
+    return homePageCssLlenarForm;
+
     }
 }
 //

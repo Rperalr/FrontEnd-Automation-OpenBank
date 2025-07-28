@@ -22,18 +22,18 @@ public class MethodsCss extends BasePage {
     }
 
     public HomePageCss Method_Css() {
-        HomePageCss homePageCss = new HomePageCss(driver);
-            actions.click(homePageCss.getBtnHome_SABER_MAS());
-            actions.moveTo(homePageCss.getBtnModulos_MENU_CUENTAS(),driver);
-            waits.timeOutImplicitWaitHorTwo(driver);
-                    actions.moveTo(homePageCss.getBtnSubMenu_TARJETAS(),driver);
-                    actions.moveTo(homePageCss.getBtnSubMenu_FINANCIACION(),driver);
-                    actions.click(homePageCss.getBtnSubMenu_BLOG());
-            assertEquals("https://www.openbank.es/open-to-learn",driver.
-                     getCurrentUrl(),"La url es correcta " + driver.getCurrentUrl());
-            assertEquals("España - ES",homePageCss
-                     .getBtn_PAIS_ORIGEN_LANDING().getText(),"Si se encuentra visible el Boton de pais origen en la Landind OpenBank");
+            HomePageCss homePageCss = new HomePageCss(driver);
+                actions.click(homePageCss.getBtnHome_SABER_MAS());
+                actions.moveTo(homePageCss.getBtnModulos_MENU_CUENTAS(),driver);
+                waits.timeOutImplicitWaitHorTwo(driver);
+                actions.moveTo(homePageCss.getBtnSubMenu_TARJETAS(),driver);
+                actions.moveTo(homePageCss.getBtnSubMenu_FINANCIACION(),driver);
+                actions.click(homePageCss.getBtnSubMenu_BLOG());
+        assertEquals("https://www.openbank.es/open-to-learn",driver.
+                getCurrentUrl(),"La url es correcta " + driver.getCurrentUrl());
+        assertEquals("España - ES",homePageCss.
+                getBtn_PAIS_ORIGEN_LANDING().getText(),"Se encuentra visible el list en el Home de OpenBank");
+    return homePageCss;
 
-        return homePageCss;
     }
 }
