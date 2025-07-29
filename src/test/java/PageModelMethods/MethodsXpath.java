@@ -43,9 +43,9 @@ public class MethodsXpath extends BasePage {
         assertEquals("https://www.openbank.es/hazte-cliente?language=es",driver.
                 getCurrentUrl(),"La url es correcta " + driver.getCurrentUrl());
         assertEquals("Cuenta Corriente + Tarjeta Open Debit",page.
-                getLbl_CUENTA_CORRIENTE().getText(),"Si se encuentra visible la etiqueta correcta");
+                getLbl_CUENTA_CORRIENTE().getText(),"Si se encuentra visible la sección correcta");
         assertEquals("Completa tus datos personales.",page.
-                getLbl_COMPLETAR_DATOS_PERSONALES().getText(),"Si se encuentra visible la etiqueta de datos personales");
+                getLbl_COMPLETAR_DATOS_PERSONALES().getText(),"Si se encuentra visible la seccion de formulario de datos personales");
     return form;
 
     }
