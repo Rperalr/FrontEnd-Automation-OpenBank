@@ -18,7 +18,7 @@ public class HomePageXPath extends BasePage {
     @FindBy(how = How.XPATH , xpath = "//button[normalize-space()='¡Quiero hacerme cliente!']")
     private WebElement btn_QUIERO_HACERME_CLIENTE;
     @FindBy(how = How.XPATH , xpath = "(//div[@class='Select-placeholder'])[1]")
-    private WebElement radBtn_SELECIONAR_PAIS;
+    private WebElement lstbx_SELECIONAR_PAIS;
 
     //Assert Labels
     @FindBy(how = How.XPATH , xpath = "//div[@class='title-box__subtitle--register']")
@@ -35,16 +35,17 @@ public class HomePageXPath extends BasePage {
     public WebElement getBtn_HASTE_CLIENTE() {
         return btn_HASTE_CLIENTE;
     }
-    public WebElement getBtn_QUIERO_HACERME_CLIENTE() {return btn_QUIERO_HACERME_CLIENTE;}
+    public WebElement getBtn_QUIERO_HACERME_CLIENTE() {
+        return btn_QUIERO_HACERME_CLIENTE;
+    }
     public WebElement getLbl_CUENTA_CORRIENTE() {
         return lbl_CUENTA_CORRIENTE;
     }
     public WebElement getLbl_COMPLETAR_DATOS_PERSONALES() {
         return lbl_COMPLETAR_DATOS_PERSONALES;
     }
-
-    public WebElement getRadBtn_SELECIONAR_PAIS() {
-        return radBtn_SELECIONAR_PAIS;
+    public WebElement getLstbx_SELECIONAR_PAIS() {
+        return lstbx_SELECIONAR_PAIS;
     }
 
     public void Method_AceptarCookies() {

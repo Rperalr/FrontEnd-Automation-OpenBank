@@ -23,16 +23,16 @@ public class MethodsCss extends BasePage {
 
     public HomePageCss Method_TestSmoke() {
             HomePageCss homePageCss = new HomePageCss(driver);
-                actions.click(homePageCss.getBtnHome_SABER_MAS());
-                actions.moveTo(homePageCss.getBtnModulos_MENU_CUENTAS(),driver);
+                actions.click(homePageCss.getBtn_Home_SABER_MAS());
+                actions.moveTo(homePageCss.getBtn_Modulos_MENU_CUENTAS(),driver);
                 waits.timeOutImplicitWaitHorTwo(driver);
-                actions.moveTo(homePageCss.getBtnSubMenu_TARJETAS(),driver);
-                actions.moveTo(homePageCss.getBtnSubMenu_FINANCIACION(),driver);
-                actions.click(homePageCss.getBtnSubMenu_BLOG());
+                actions.moveTo(homePageCss.getBtn_SubMenu_TARJETAS(),driver);
+                actions.moveTo(homePageCss.getBtn_SubMenu_FINANCIACION(),driver);
+                actions.click(homePageCss.getBtn_SubMenu_BLOG());
         assertEquals("https://www.openbank.es/open-to-learn",driver.
                 getCurrentUrl(),"La url es correcta " + driver.getCurrentUrl());
         assertEquals("España - ES",homePageCss.
-                getBtn_PAIS_ORIGEN_LANDING().getText(),"Se encuentra visible el list en el Home de OpenBank");
+                getBtn_PAIS_ORIGEN_LANDING().getText(),"Se encuentra visible la etiqueta de pais de la landing en el Home de OpenBank");
     return homePageCss;
 
     }
