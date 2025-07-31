@@ -30,7 +30,6 @@ public class MethodsXpath extends BasePage {
     }
     public HomePageCssLlenarForm Method_Llenado_Formulario_Hazte_Cliente() {
             HomePageCssLlenarForm form = new HomePageCssLlenarForm(driver);
-            HomePageXPath page = new HomePageXPath(driver);
                 actions.sendKeys(form.txtbx_CODIGO_PROMOCIONAL, "123456");
                 actions.scrollDown(driver);
                 actions.sendKeys(form.txtbx_NOMBRE, "QA");
@@ -40,14 +39,18 @@ public class MethodsXpath extends BasePage {
                 actions.sendKeys(form.txtbx_DD, "18");
                 actions.sendKeys(form.txtbx_MM, "01");
                 actions.sendKeys(form.txtbx_AAAA, "1987");
+    return form;
+
+    }
+    public HomePageXPath VerifyTest(){
+        HomePageXPath page = new HomePageXPath(driver);
         assertEquals("https://www.openbank.es/hazte-cliente?language=es",driver.
                 getCurrentUrl(),"La url es correcta " + driver.getCurrentUrl());
         assertEquals("Cuenta Corriente + Tarjeta Open Debit",page.
                 getLbl_CUENTA_CORRIENTE().getText(),"Si se encuentra visible la sección correcta");
         assertEquals("Completa tus datos personales.",page.
                 getLbl_COMPLETAR_DATOS_PERSONALES().getText(),"Si se encuentra visible la seccion de formulario de datos personales");
-    return form;
-
+    return page;
     }
 }
 //

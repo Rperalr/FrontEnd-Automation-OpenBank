@@ -31,6 +31,7 @@ public class TestXpathOpenBank extends BaseTest {
                     page.Method_AceptarCookies();
                     methods.Method_Hazte_Cliente();
                     methods.Method_Llenado_Formulario_Hazte_Cliente();
+                    methods.VerifyTest();
 
            this.test.log(Status.PASS, "Test fue exitoso");
        } catch (Exception e) {
@@ -38,7 +39,5 @@ public class TestXpathOpenBank extends BaseTest {
       }
        screenshotElementUtil.captureElementScreenshot(driver, page.getLbl_COMPLETAR_DATOS_PERSONALES(), ALLPATH_ASHOT_ELEMENT_WEB);
        ScreenshotUtils.takeScreenshot(driver, PATH_ASHOT + NAME_ASHOOT + TIME_STAMP + ".jpg");
-
     }
-
 }
